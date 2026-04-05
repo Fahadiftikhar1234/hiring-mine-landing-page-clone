@@ -293,6 +293,7 @@ body {
 .culture-img {
   overflow: hidden;
   border-radius: 10px;
+  border: 3px solid #6c3bff;
 }
 
 .culture-img img {
@@ -526,4 +527,69 @@ body {
 
   .footer { padding: 40px 16px 0; }
   .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+}
+
+.member-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+}
+
+.member-img-circle {
+  transition: box-shadow 0.3s ease;
+}
+
+.member-card:hover .member-img-circle {
+  box-shadow: 0 8px 24px rgba(108, 59, 255, 0.35);
+}
+
+.member-card:hover h3 {
+  color: #6c3bff;
+}
+
+.culture-img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.culture-img:hover {
+  transform: scale(1.03);
+}
+
+.culture-img:hover img {
+  box-shadow: 0 8px 24px rgba(108, 59, 255, 0.35);
+}
+
+.team-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-img-wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.team-card:hover .team-img-wrapper {
+  box-shadow: 0 8px 24px rgba(108, 59, 255, 0.35);
+}
+
+.team-card:hover .team-name {
+  color: #6c3bff;
+}
+
+.footer-logo img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
 }
